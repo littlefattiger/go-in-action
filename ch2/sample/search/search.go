@@ -37,3 +37,12 @@ func Run(searchTeem string) {
 
 	Display(results)
 }
+
+func Register(feedType string, matcher Matcher) {
+	if _, exists := matchers[feedType]; exists {
+		log.Fatalln(feedType, "matcher already register")
+	}
+
+	log.Println("Register", feedType, "matcher")
+	matchers[feedType] = matcher
+}
