@@ -1,0 +1,1 @@
+This chapter gave you an overview of some basic library, like log, json encoding and decoding
